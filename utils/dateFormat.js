@@ -81,7 +81,7 @@ module.exports = (
     hour = 12;
   }
 
-  const minutes = dateObj.getMinutes();
+  const minutes = String( "0" + dateObj.getMinutes() ).slice( -2 );
 
   // set `am` or `pm`
   let periodOfDay;
